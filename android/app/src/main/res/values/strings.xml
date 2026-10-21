@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <resources>
-    <string name="app_name">OfflineTestApp</string>
-    <string name="title_activity_main">OfflineTestApp</string>
+    <string name="app_name">WHOLESELLERS DZ</string>
+    <string name="title_activity_main">WHOLESELLERS DZ</string>
     <string name="package_name">com.example.offlinetest</string>
     <string name="custom_url_scheme">com.example.offlinetest</string>
 </resources>
