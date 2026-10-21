@@ -66,7 +66,7 @@ export default function Home() {
   };
 
   return (
-    <main className="min-h-screen bg-slate-950 text-slate-100 p-6 flex flex-col justify-center items-center">
+    <main className="min-h-screen bg-green-500 text-slate-100 p-6 flex flex-col justify-center items-center">
       <div className="w-full max-w-md bg-slate-900 border border-slate-800 p-6 rounded-2xl shadow-xl space-y-6">
         <h1 className="text-2xl font-bold text-center text-cyan-400">
           Capacitor Offline Test

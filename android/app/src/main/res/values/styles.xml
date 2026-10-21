@@ -7,11 +7,8 @@
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
         
-        <!-- REQUIRED: Tells Android we want to color the system bars -->
         <item name="android:windowDrawsSystemBarBackgrounds">true</item>
-        <!-- Force Top Status Bar Color -->
         <item name="android:statusBarColor">#0044ff</item>
-        <!-- Force Bottom Navigation Bar Color -->
         <item name="android:navigationBarColor">#0044ff</item>
     </style>
 
@@ -23,11 +20,8 @@
         <item name="windowNoTitle">true</item>
         <item name="android:background">@null</item>
         
-        <!-- REQUIRED: Tells Android we want to color the system bars -->
         <item name="android:windowDrawsSystemBarBackgrounds">true</item>
-        <!-- Force Top Status Bar Color -->
         <item name="android:statusBarColor">#0044ff</item>
-        <!-- Force Bottom Navigation Bar Color -->
         <item name="android:navigationBarColor">#0044ff</item>
     </style>
 
