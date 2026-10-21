@@ -2,17 +2,16 @@ import type { CapacitorConfig } from "@capacitor/cli";
 
 const config: CapacitorConfig = {
   appId: "com.example.offlinetest",
-  appName: "OfflineTestApp",
+  appName: "WHOLESELLERS DZ",
   webDir: "out",
   plugins: {
     SplashScreen: {
-      launchShowDuration: 3000, // Show for 2 seconds
+      launchShowDuration: 3000,
       launchAutoHide: true,
-      backgroundColor: "#0044ff", // Matches your dark Tailwind slate-950 background
-      showSpinner: true, // Clean look with no loading spinner
-      androidSplashResourceName: "splash", // src/android/app/src/main/res/drawable/splash.xml
+      backgroundColor: "#0044ff",
+      showSpinner: false,
+      androidSplashResourceName: "splash",
       androidScaleType: "CENTER_CROP",
-      Animation: "FADE_IN",
     },
   },
 };
