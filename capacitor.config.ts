@@ -6,9 +6,11 @@ const config: CapacitorConfig = {
   webDir: "out",
 
   plugins: {
-    StatusBar: {
-      style: "DARK",
-      overlaysWebView: true,
+    SystemBars: {
+      insetsHandling: "css",
+      initialViewportFitValueHint: "cover",
+      style: "LIGHT",
+      hidden: false,
     },
 
     SplashScreen: {
