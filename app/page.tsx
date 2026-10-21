@@ -2,11 +2,31 @@
 
 import { useState, useEffect } from "react";
 import { LocalNotifications } from "@capacitor/local-notifications";
+import { StatusBar, Style } from "@capacitor/status-bar";
 
 export default function Home() {
   const [inputText, setInputText] = useState("");
   const [savedData, setSavedData] = useState("No data stored yet.");
   const [status, setStatus] = useState("App is ready.");
+
+  useEffect(() => {
+    const configureStatusBar = async () => {
+      try {
+        // Set background color to match your dark theme
+        await StatusBar.setBackgroundColor({ color: "#030712" });
+
+        // Set text/icon style (Style.Dark for light text, Style.Light for dark text)
+        await StatusBar.setStyle({ style: Style.Dark });
+
+        // Ensure content doesn't get hidden underneath the status bar
+        await StatusBar.setOverlaysWebView({ overlay: false });
+      } catch (e) {
+        console.log("Status bar plugin not active on web preview", e);
+      }
+    };
+
+    configureStatusBar();
+  }, []);
 
   // Load saved data on mount
   useEffect(() => {
