@@ -8,7 +8,7 @@
 <item name="android:navigationBarColor">@android:color/transparent</item>
 <item name="android:windowLightStatusBar">false</item>
 <item name="android:windowLightNavigationBar">false</item>
-<item name="android:navigationBarContrastEnforced">false</item>
+<!-- <item name="android:navigationBarContrastEnforced">false</item> -->
     </style>
 
     <style
@@ -20,7 +20,7 @@
 <item name="android:navigationBarColor">@android:color/transparent</item>
 <item name="android:windowLightStatusBar">false</item>
 <item name="android:windowLightNavigationBar">false</item>
-<item name="android:navigationBarContrastEnforced">false</item>
+<!-- <item name="android:navigationBarContrastEnforced">false</item> -->
     </style>
 
     <!-- Modern Android 12+ Splash Screen Theme -->
