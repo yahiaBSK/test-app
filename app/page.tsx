@@ -10,18 +10,22 @@ export default function Home() {
   const [status, setStatus] = useState("App is ready.");
 
   useEffect(() => {
-    // Apply status bar styling natively on mount
     const initStatusBar = async () => {
       try {
-        await StatusBar.setBackgroundColor({ color: "#0044ff" }); // Matches slate-950
-        // await StatusBar.setStyle({ style: Style.Dark });
-        await StatusBar.setOverlaysWebView({ overlay: false });
-      } catch (e) {
-        console.log("Status bar not supported in browser preview");
+        await StatusBar.setStyle({
+          style: Style.Dark,
+        });
+
+        // Keep the WebView drawing behind the status bar.
+        await StatusBar.setOverlaysWebView({
+          overlay: true,
+        });
+      } catch (error) {
+        console.warn("Unable to configure status bar:", error);
       }
     };
 
-    initStatusBar();
+    void initStatusBar();
   }, []);
 
   // Load saved data on mount

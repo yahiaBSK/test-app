@@ -4,7 +4,13 @@ const config: CapacitorConfig = {
   appId: "com.example.offlinetest",
   appName: "WHOLESELLERS DZ",
   webDir: "out",
+
   plugins: {
+    StatusBar: {
+      style: "DARK",
+      overlaysWebView: true,
+    },
+
     SplashScreen: {
       launchShowDuration: 3000,
       launchAutoHide: true,
