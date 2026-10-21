@@ -20,6 +20,9 @@ jobs:
       - name: Install Dependencies
         run: npm install
 
+      - name: Generate Native Assets
+        run: npx @capacitor/assets generate --android
+
       - name: Build Next.js Static Export
         run: npm run build
 
