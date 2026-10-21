@@ -13,10 +13,10 @@ export default function Home() {
     const configureStatusBar = async () => {
       try {
         // Set background color to match your dark theme
-        await StatusBar.setBackgroundColor({ color: "#030712" });
+        await StatusBar.setBackgroundColor({ color: "#0044fd" });
 
         // Set text/icon style (Style.Dark for light text, Style.Light for dark text)
-        await StatusBar.setStyle({ style: Style.Dark });
+        await StatusBar.setStyle({ style: Style.Light });
 
         // Ensure content doesn't get hidden underneath the status bar
         await StatusBar.setOverlaysWebView({ overlay: false });

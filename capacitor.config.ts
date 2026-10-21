@@ -6,12 +6,13 @@ const config: CapacitorConfig = {
   webDir: "out",
   plugins: {
     SplashScreen: {
-      launchShowDuration: 2000, // Show for 2 seconds
+      launchShowDuration: 3000, // Show for 2 seconds
       launchAutoHide: true,
-      backgroundColor: "#030712", // Matches your dark Tailwind slate-950 background
-      showSpinner: false, // Clean look with no loading spinner
-      androidSplashResourceName: "splash",
+      backgroundColor: "#0044ff", // Matches your dark Tailwind slate-950 background
+      showSpinner: true, // Clean look with no loading spinner
+      androidSplashResourceName: "splash", // src/android/app/src/main/res/drawable/splash.xml
       androidScaleType: "CENTER_CROP",
+      Animation: "FADE_IN",
     },
   },
 };
