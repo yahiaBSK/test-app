@@ -10,22 +10,18 @@ export default function Home() {
   const [status, setStatus] = useState("App is ready.");
 
   useEffect(() => {
-    const configureStatusBar = async () => {
+    // Apply status bar styling natively on mount
+    const initStatusBar = async () => {
       try {
-        // Set background color to match your dark theme
-        await StatusBar.setBackgroundColor({ color: "#0044fd" });
-
-        // Set text/icon style (Style.Dark for light text, Style.Light for dark text)
-        await StatusBar.setStyle({ style: Style.Light });
-
-        // Ensure content doesn't get hidden underneath the status bar
+        await StatusBar.setBackgroundColor({ color: "#0044ff" }); // Matches slate-950
+        await StatusBar.setStyle({ style: Style.Dark });
         await StatusBar.setOverlaysWebView({ overlay: false });
       } catch (e) {
-        console.log("Status bar plugin not active on web preview", e);
+        console.log("Status bar not supported in browser preview");
       }
     };
 
-    configureStatusBar();
+    initStatusBar();
   }, []);
 
   // Load saved data on mount
